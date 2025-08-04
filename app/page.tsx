@@ -141,7 +141,7 @@ export default function Component() {
 
   const cronogramaNorte = [
     {
-      fecha: "MARTES 12 DE AGOSTO 2025",
+      fecha: "LUNES 11 DE AGOSTO 2025",
       titulo: "El pasado se ha ido",
       actividades: [
         {
@@ -184,8 +184,51 @@ export default function Component() {
       estado: "completado",
     },
     {
-      fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
+      fecha: "MARTES 12 DE AGOSTO 2025",
       titulo: "Tienes que perder para aprender a ganar",
+      actividades: [
+        {
+          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
+          horario: "7:00 am",
+          actividad: "El Viaje",
+          area: "Bienestar",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
+          horario: "9:00 am",
+          actividad: "Osadía",
+          area: "UVI",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "Ingenierías - Educación a distancia y virtual",
+          horario: "10:00 am",
+          actividad: "El Viaje",
+          area: "Bienestar",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "Ingenierías - Educación a distancia y virtual",
+          horario: "12:00 pm",
+          actividad: "Osadía",
+          area: "UVI",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+      ],
+      estado: "completado",
+    },
+    {
+      fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
+      titulo: "Viví y aprendí de los tontos y los sabios",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -219,7 +262,7 @@ export default function Component() {
     },
     {
       fecha: "JUEVES 14 DE AGOSTO 2025",
-      titulo: "Viví y aprendí de los tontos y los sabios",
+      titulo: "Canta conmigo aunque sea por hoy",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -253,7 +296,7 @@ export default function Component() {
     },
     {
       fecha: "VIERNES 15 DE AGOSTO 2025",
-      titulo: "Canta conmigo aunque sea por hoy",
+      titulo: "Sueña hasta que tus sueños se hagan realidad",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -287,7 +330,7 @@ export default function Component() {
     },
     {
       fecha: "SÁBADO 16 DE AGOSTO 2025",
-      titulo: "Sigue soñando, sigue soñando",
+      titulo: "Sigue soñando, sigue soñando, sigue soñando",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -323,8 +366,51 @@ export default function Component() {
 
   const cronogramaSur = [
     {
-      fecha: "MARTES 12 DE AGOSTO 2025",
+      fecha: "LUNES 11 DE AGOSTO 2025",
       titulo: "El pasado se ha ido",
+      actividades: [
+        {
+          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
+          horario: "7:00 am",
+          actividad: "El Viaje",
+          area: "Bienestar",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
+          horario: "9:00 am",
+          actividad: "Osadía",
+          area: "UVI",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "Ingenierías - Educación a distancia y virtual",
+          horario: "10:00 am",
+          actividad: "El Viaje",
+          area: "Bienestar",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "Ingenierías - Educación a distancia y virtual",
+          horario: "12:00 pm",
+          actividad: "Osadía",
+          area: "UVI",
+          lugar: "Ágora Norte",
+          tipo: "Presencial",
+          link: null,
+        },
+      ],
+      estado: "completado",
+    },
+    {
+      fecha: "MARTES 12 DE AGOSTO 2025",
+      titulo: "Tienes que perder para aprender a ganar",
       actividades: [
         {
           facultad: "Ciencias empresariales - Ciencias sociales y humanas",
@@ -367,7 +453,7 @@ export default function Component() {
     },
     {
       fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
-      titulo: "Tienes que perder para aprender a ganar",
+      titulo: "Viví y aprendí de los tontos y los sabios",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -401,7 +487,7 @@ export default function Component() {
     },
     {
       fecha: "JUEVES 14 DE AGOSTO 2025",
-      titulo: "Viví y aprendí de los tontos y los sabios",
+      titulo: "Canta conmigo aunque sea por hoy",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -435,7 +521,7 @@ export default function Component() {
     },
     {
       fecha: "VIERNES 15 DE AGOSTO 2025",
-      titulo: "Canta conmigo aunque sea por hoy",
+      titulo: "Sueña hasta que tus sueños se hagan realidad",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -469,7 +555,7 @@ export default function Component() {
     },
     {
       fecha: "SÁBADO 16 DE AGOSTO 2025",
-      titulo: "Sigue soñando, sigue soñando",
+      titulo: "Sigue soñando, sigue soñando, sigue soñando",
       actividades: [
         {
           facultad: "Todas las Facultades",
@@ -683,8 +769,8 @@ export default function Component() {
           <div className="container mx-auto">
             <div className="text-center mb-12 relative overflow-hidden">
               {/* Decorative elements */}
-              <div className="absolute top-10 right-10">
-                <Star className="h-8 w-8 text-[#ffd700] floating-dot-1" />
+              <div className="absolute top-6 right-6 sm:top-10 sm:right-10">
+                <Star className="h-6 w-6 sm:h-8 sm:w-8 text-[#ffd700] floating-dot-1" />
               </div>
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
@@ -693,7 +779,7 @@ export default function Component() {
                 <p className="text-lg text-gray-600 mb-2">Sigue soñando con nosotros. Este viaje apenas comienza.</p>
                 <div className="w-16 h-1 bg-[#1e3a5f] mx-auto mb-8"></div>
                 <div className="max-w-4xl mx-auto text-center mb-12">
-                  <p className="text-base text-gray-700 leading-relaxed">
+                  <p className="text-lg text-gray-600 mb-2">
                     Durante los próximos días, conocerás nuestras facultades, programas y espacios pensados para tu
                     formación integral. Te acompañaremos en este proceso en el que desarrollarás habilidades,
                     conocimientos y vínculos que enriquecerán tu experiencia universitaria. ¡Nos alegra tenerte con
