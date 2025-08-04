@@ -623,21 +623,21 @@ export default function Component() {
     <a
       href="#cronograma"
       onClick={(e) => handleNavClick(e, "cronograma")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-52 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-45 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Cronograma
     </a>
     <a
       href="#testimonios"
       onClick={(e) => handleNavClick(e, "testimonios")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-52 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-45 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Testimonios
     </a>
     <a
       href="#contacto"
       onClick={(e) => handleNavClick(e, "contacto")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-52 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-45 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Contacto
     </a>
