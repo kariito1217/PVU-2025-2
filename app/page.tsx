@@ -574,91 +574,77 @@ export default function Component() {
         }
       `}</style>
 
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200 relative z-20">
-        <div className="container mx-auto px-4 md:px-12 py-6 max-w-7xl">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 flex items-center justify-center">
-                <Image
-                  src="/images/uniajc-header-logo-blue.png"
-                  alt="UNIAJC Logo"
-                  width={48}
-                  height={48}
-                  className="object-contain"
-                />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-[#1e3a5f]">UNIAJC</h1>
-                <p className="text-sm text-gray-600">Universidad Antonio José Camacho</p>
-              </div>
-            </div>
+ <header className="bg-white shadow-sm border-gray-200 relative z-20">
+    <div className="flex items-center justify-between">
+     
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-6">
-              <a
-                href="#cronograma"
-                onClick={(e) => handleNavClick(e, "cronograma")}
-                className="text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white transition-all duration-200 font-medium cursor-pointer px-4 py-2 rounded-md"
-              >
-                Cronograma
-              </a>
-              <a
-                href="#testimonios"
-                onClick={(e) => handleNavClick(e, "testimonios")}
-                className="text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white transition-all duration-200 font-medium cursor-pointer px-4 py-2 rounded-md"
-              >
-                Testimonios
-              </a>
-              <a
-                href="#contacto"
-                onClick={(e) => handleNavClick(e, "contacto")}
-                className="text-[#1e3a5f] hover:bg-[#1e3a5f] hover:text-white transition-all duration-200 font-medium cursor-pointer px-4 py-2 rounded-md"
-              >
-                Contacto
-              </a>
-            </nav>
+      {/* Botón menú móvil */}
+      <button
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        className="md:hidden p-2 rounded-md text-[#1e3a5f] hover:bg-gray-100 transition-colors"
+        aria-label="Abrir menú"
+      >
+        {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+      </button>
+    </div>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-md text-[#1e3a5f] hover:bg-gray-100 transition-colors"
-              aria-label="Abrir menú"
-            >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+    {/* Menú móvil */}
+    {isMobileMenuOpen && (
+      <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
+        <nav className="flex flex-col space-y-4 pt-4">
+          <a
+            href="#cronograma"
+            onClick={(e) => handleNavClick(e, "cronograma")}
+            className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
+          >
+            Cronograma
+          </a>
+          <a
+            href="#testimonios"
+            onClick={(e) => handleNavClick(e, "testimonios")}
+            className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
+          >
+            Testimonios
+          </a>
+          <a
+            href="#contacto"
+            onClick={(e) => handleNavClick(e, "contacto")}
+            className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
+          >
+            Contacto
+          </a>
+        </nav>
+      </div>
+    )}
+  
 
-          {/* Mobile Navigation */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden mt-4 pb-4 border-t border-gray-200">
-              <nav className="flex flex-col space-y-4 pt-4">
-                <a
-                  href="#cronograma"
-                  onClick={(e) => handleNavClick(e, "cronograma")}
-                  className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
-                >
-                  Cronograma
-                </a>
-                <a
-                  href="#testimonios"
-                  onClick={(e) => handleNavClick(e, "testimonios")}
-                  className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
-                >
-                  Testimonios
-                </a>
-                <a
-                  href="#contacto"
-                  onClick={(e) => handleNavClick(e, "contacto")}
-                  className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
-                >
-                  Contacto
-                </a>
-              </nav>
-            </div>
-          )}
-        </div>
-      </header>
+  {/* Menú lateral SOLO en pantallas grandes */}
+  <div className="hidden md:flex fixed top-1/3 right-0 flex-col items-end space-y-4 z-50">
+    <a
+      href="#cronograma"
+      onClick={(e) => handleNavClick(e, "cronograma")}
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-52 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+    >
+      Cronograma
+    </a>
+    <a
+      href="#testimonios"
+      onClick={(e) => handleNavClick(e, "testimonios")}
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-52 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+    >
+      Testimonios
+    </a>
+    <a
+      href="#contacto"
+      onClick={(e) => handleNavClick(e, "contacto")}
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-52 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+    >
+      Contacto
+    </a>
+  </div>
+</header>
+
+
 
       <main className="flex-1">
         {/* Hero Section with Banner */}
@@ -682,7 +668,7 @@ export default function Component() {
           {/* Banner Image */}
           <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px]">
             <Image
-              src="/images/banner-pvu.jpg"
+              src="/images/banner.jpg"
               alt="Preparación para la vida Universitaria - Bienvenido estudiante nuevo"
               fill
               className="object-cover object-center sm:object-cover"
