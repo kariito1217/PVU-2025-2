@@ -121,3 +121,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.floating-dot-1 {
+  animation: float1 8s ease-in-out infinite;
+  display: block;
+}

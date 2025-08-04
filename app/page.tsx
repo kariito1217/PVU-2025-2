@@ -769,7 +769,7 @@ export default function Component() {
           <div className="container mx-auto">
             <div className="text-center mb-12 relative overflow-hidden">
               {/* Decorative elements */}
-              <div className="absolute top-6 right-6 sm:top-10 sm:right-10">
+              <div className="absolute top-6 right-4 sm:top-10 sm:right-10">
                 <Star className="h-6 w-6 sm:h-8 sm:w-8 text-[#ffd700] floating-dot-1" />
               </div>
               <div className="relative z-10">
