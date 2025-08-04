@@ -752,7 +752,7 @@ export default function Component() {
           </div>
 
           {/* Banner Image */}
-          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px]">
+          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] max-w-screen-2xl mx-auto">
             <Image
               src="/images/Banner.jpg"
               alt="Preparación para la vida Universitaria - Bienvenido estudiante nuevo"
