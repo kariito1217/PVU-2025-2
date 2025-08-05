@@ -765,7 +765,7 @@ export default function Component() {
         </section>
 
         {/* Cronograma Section */}
-        <section id="cronograma" className="py-16 px-4 bg-gray-50">
+        <section id="cronograma" className="py-16 px-4 bg-[#0f172c]">
           <div className="container mx-auto">
             <div className="text-center mb-12 relative overflow-hidden">
               {/* Decorative elements */}
@@ -773,13 +773,13 @@ export default function Component() {
                 <Star className="h-6 w-6 sm:h-8 sm:w-8 text-[#ffd700] floating-dot-1" />
               </div>
               <div className="relative z-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                   Preparación para la Vida Universitaria (PVU)
                 </h2>
-                <p className="text-lg text-gray-600 mb-2">Sigue soñando con nosotros. Este viaje apenas comienza.</p>
+                <p className="text-lg text-white mb-2">Sigue soñando con nosotros. Este viaje apenas comienza.</p>
                 <div className="w-16 h-1 bg-[#1e3a5f] mx-auto mb-8"></div>
                 <div className="max-w-4xl mx-auto text-center mb-12">
-                  <p className="text-lg text-gray-600 mb-2">
+                  <p className="text-lg text-white mb-2">
                     Durante los próximos días, conocerás nuestras facultades, programas y espacios pensados para tu
                     formación integral. Te acompañaremos en este proceso en el que desarrollarás habilidades,
                     conocimientos y vínculos que enriquecerán tu experiencia universitaria. ¡Nos alegra tenerte con
@@ -791,7 +791,7 @@ export default function Component() {
 
             {/* Sede Norte */}
             <div className="max-w-6xl mx-auto mb-12">
-              <h3 className="text-3xl font-bold text-[#1e3a5f] mb-3 text-left">Sede Norte</h3>
+              <h3 className="text-3xl font-bold text-white mb-3 text-left">Sede Norte</h3>
               <Accordion type="single" collapsible className="space-y-4">
                 {cronogramaNorte.map((dia, index) => (
                   <AccordionItem
@@ -879,7 +879,7 @@ export default function Component() {
 
             {/* Sede Sur */}
             <div className="max-w-6xl mx-auto">
-              <h3 className="text-3xl font-bold text-[#1e3a5f] mb-4 text-left mt-8">Sede Sur</h3>
+              <h3 className="text-3xl font-bold text-white mb-4 text-left mt-8">Sede Sur</h3>
               <Accordion type="single" collapsible className="space-y-4">
                 {cronogramaSur.map((dia, index) => (
                   <AccordionItem
