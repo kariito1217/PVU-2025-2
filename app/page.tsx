@@ -774,7 +774,7 @@ export default function Component() {
               </div>
               <div className="relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Preparación para la Vida Universitaria (PVU)
+                  Bienvenidos
                 </h2>
                 <p className="text-lg text-white mb-2">Sigue soñando con nosotros. Este viaje apenas comienza.</p>
                 <div className="w-16 h-1 bg-[#1e3a5f] mx-auto mb-8"></div>
@@ -1114,80 +1114,80 @@ export default function Component() {
       </main>
 
       {/* Footer */}
-      <footer id="contacto" className="bg-[#1e3a5f] text-white py-12 px-4">
+      <footer id="contacto" className="bg-[#0f172c] text-white py-12 px-4">
         <div className="container mx-auto max-w-7xl">
           {/* Nuestras Oficinas */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-center mb-12 text-white">Nuestras oficinas</h2>
+            <h2 className="text-2xl font-bold text-center mb-12 bg-[#0f172c]">Nuestras oficinas</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Columna 1 */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Mail className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">mercadeo@admon.uniajc.edu.co</span>
                   </div>
-                  <div className="text-white text-sm">PBX: +57 (2) 665 2828 Opc1</div>
-                  <div className="text-white text-sm">Fax PBX: +57 (2) 688 2828 Ext. 108</div>
+                  <div className="bg-[#0f172c] text-sm">PBX: +57 (2) 665 2828 Opc1</div>
+                  <div className="bg-[#0f172c] text-sm">Fax PBX: +57 (2) 688 2828 Ext. 108</div>
                 </div>
 
                 <hr className="border-gray-400" />
 
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Norte: Av.6N # 28N – 102</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 9:00 p.m</span>
                   </div>
-                  <div className="text-white text-sm">Sábados 8:00 a.m a 5:00 p.m</div>
+                  <div className="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 5:00 p.m</div>
                 </div>
               </div>
 
               {/* Columna 2 */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Sur: Calle 25 No. 127 – 220</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Phone className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">+57 2 555 4471</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 6:00 p.m</span>
                   </div>
-                  <div className="text-white text-sm">Sábados 8:00 a.m a 1:00 p.m</div>
+                  <div className="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 1:00 p.m</div>
                 </div>
 
                 <hr className="border-gray-400" />
 
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Estación 1: Av.3A # 23CN – 84</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 12:00 m</span>
                   </div>
-                  <div className="text-white text-sm">2:00 p.m a 6:00 p.m</div>
+                  <div className="bg-[#0f172c] text-sm">2:00 p.m a 6:00 p.m</div>
                 </div>
               </div>
 
               {/* Columna 3 */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Estación 2: Av.3AN # 23D – 34</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Phone className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">+57 2 667 3571 – 72</span>
                   </div>
@@ -1196,26 +1196,26 @@ export default function Component() {
                 <hr className="border-gray-400" />
 
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Estación 3: Av.3N # 52N – 102</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Phone className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">+57 2 653 6703</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-white">
+                  <div className="flex items-center space-x-2 bg-[#0f172c]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 9:30 p.m</span>
                   </div>
-                  <div className="text-white text-sm">Sábados 8:00 a.m a 12:30 p.m</div>
+                  <div className="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 12:30 p.m</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t border-gray-400 pt-8">
+          <div className="border-t bg-[#0f172c] pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex items-center">
                 <Image
