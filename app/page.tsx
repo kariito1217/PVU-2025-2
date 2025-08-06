@@ -1014,7 +1014,7 @@ export default function Component() {
 
       {/* Bloque del testimonio */}
       <div
-        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[600px] md:min-h-[380px]"
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[680px] md:min-h-[380px]"
         style={{
           borderTopLeftRadius: '2rem',
           borderTopRightRadius: '2rem',
