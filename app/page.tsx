@@ -32,7 +32,7 @@ export default function Component() {
   e.preventDefault();
 
   const element = document.getElementById(id);
-  const headerOffset = 300; // Cambia este valor si tu header es más alto o más bajo
+  const headerOffset = 80; // Cambia este valor si tu header es más alto o más bajo
 
   if (element) {
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
@@ -672,7 +672,7 @@ export default function Component() {
         }
       `}</style>
 
- <header className="bg-white shadow-sm border-gray-200 relative z-20">
+<header className="fixed top-0 w-full bg-white shadow-sm border-b border-gray-200 z-50">
     <div className="flex items-center justify-between">
      
 
