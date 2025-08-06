@@ -776,12 +776,6 @@ export default function Component() {
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
                   Bienvenidos
                 </h2>
-                 {/* Imagen debajo de "Bienvenidos" */}
-                  <img
-                    src="images/Bienvenida.png"
-                    alt="Imagen de bienvenida"
-                    className="mx-auto mb-6 w-[1000px] rounded-lg shadow-lg"
-                  />
                 <p className="text-lg text-white mb-2">Sigue soñando con nosotros. Este viaje apenas comienza.</p>
                 <div className="w-16 h-1 bg-[#1e3a5f] mx-auto mb-8"></div>
                 <div className="max-w-4xl mx-auto text-center mb-12">
@@ -971,7 +965,15 @@ export default function Component() {
               </Accordion>
             </div>
           </div>
+           {/* Imagen debajo de "Bienvenidos" */}
+               <img
+                src="images/Bienvenida.png"
+                alt="Imagen de bienvenida"
+                className="w-full h-auto mt-16 mb-8 rounded-lg shadow-lg"
+              />
         </section>
+
+        
 
         {/* Testimonios Section */}
         <section id="testimonios" className="py-16 px-4 bg-[#1e3a5f]">
