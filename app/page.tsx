@@ -979,18 +979,22 @@ export default function Component() {
               </Accordion>
             </div>
           </div>
-           {/* Imagen debajo de "Bienvenidos" */}
+        </section>
+
+  {/* PRESENTACION */}
+        <section id="vive-tu-campus" className="py-2 px-2 bg-[#0f172c]">
+        {/* Imagen*/}
                <img
                 id="vive-tu-campus"
                 src="images/ViveTuCampus.png"
                 alt="Imagen de vive tu campus"
-                className="w-full h-auto mt-16 mb-8"
+                className="w-full h-auto mb-8"
               />
         </section>
 
-        
 
- <section id="testimonios" className="py-16 px-4 bg-[#0f172c]">
+  {/* TESTIMONIOS */}
+<section id="testimonios" className="py-16 px-4 bg-[#0f172c]">
   <div className="container mx-auto">
     {/* Título */}
     <div className="text-center mb-12">
@@ -1002,7 +1006,7 @@ export default function Component() {
       {/* Flecha izquierda */}
       <button
         onClick={prevTestimonioSlide}
-        className="absolute left-2 md:-left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+        className="absolute left-4 md:-left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
         aria-label="Testimonio anterior"
       >
         <ChevronLeft className="w-6 h-6 text-gray-600" />
@@ -1010,12 +1014,12 @@ export default function Component() {
 
       {/* Bloque del testimonio */}
       <div
-        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[420px] md:min-h-[380px] h-auto"
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[500px] md:min-h-[380px]"
         style={{
           borderTopLeftRadius: '2rem',
           borderTopRightRadius: '2rem',
           borderBottomLeftRadius: '2rem',
-          borderBottomRightRadius: '0'
+          borderBottomRightRadius: '0',
         }}
       >
         {/* Imagen circular */}
@@ -1041,7 +1045,7 @@ export default function Component() {
       {/* Flecha derecha */}
       <button
         onClick={nextTestimonioSlide}
-        className="absolute right-2 md:-right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+        className="absolute right-4 md:-right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
         aria-label="Siguiente testimonio"
       >
         <ChevronRight className="w-6 h-6 text-gray-600" />
@@ -1063,6 +1067,7 @@ export default function Component() {
     </div>
   </div>
 </section>
+
 
 
 
