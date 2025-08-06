@@ -975,7 +975,7 @@ export default function Component() {
 
         
 
-  {/* Testimonios Section */}
+ {/* Testimonios Section */}
 <section id="testimonios" className="py-16 px-4 bg-[#1e3a5f]">
   <div className="container mx-auto">
     {/* Título */}
@@ -995,12 +995,14 @@ export default function Component() {
       </button>
 
       {/* Bloque del testimonio */}
-      <div className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40"
+      <div
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out"
         style={{
           borderTopLeftRadius: '2rem',
           borderTopRightRadius: '2rem',
           borderBottomLeftRadius: '2rem',
-          borderBottomRightRadius: '0'
+          borderBottomRightRadius: '0',
+          minHeight: '280px'
         }}
       >
         {/* Imagen circular (parte superior izquierda) */}
@@ -1017,7 +1019,7 @@ export default function Component() {
           <p className="text-xl font-bold text-[#1e3a5f]">
             {testimonios[currentTestimonioSlide].nombre}
           </p>
-          <p className="text-sm text-white mt-2 leading-relaxed">
+          <p className="text-base text-white mt-2 leading-relaxed">
             {testimonios[currentTestimonioSlide].testimonio}
           </p>
         </div>
@@ -1048,6 +1050,7 @@ export default function Component() {
     </div>
   </div>
 </section>
+
 
 
 
