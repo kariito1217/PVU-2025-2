@@ -990,65 +990,63 @@ export default function Component() {
 
         
 
- {/* Testimonios Section */}
-<section id="testimonios" className="py-16 px-4 bg-[#0f172c]">
+ <section id="testimonios" className="py-16 px-4 bg-[#0f172c]">
   <div className="container mx-auto">
     {/* Título */}
     <div className="text-center mb-12">
       <h2 className="text-3xl md:text-4xl font-bold text-white">Nuestros egresados dicen</h2>
     </div>
 
-      {/* Testimonio con flechas laterales */}
-  <div className="relative max-w-2xl mx-auto flex items-center">
-    {/* Flecha izquierda */}
-    <button
-      onClick={prevTestimonioSlide}
-      className="absolute left-2 md:-left-12 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
-      aria-label="Testimonio anterior"
-    >
-      <ChevronLeft className="w-6 h-6 text-gray-600" />
-    </button>
+    {/* Testimonio con flechas laterales */}
+    <div className="relative max-w-2xl mx-auto flex items-stretch">
+      {/* Flecha izquierda */}
+      <button
+        onClick={prevTestimonioSlide}
+        className="absolute left-2 md:-left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+        aria-label="Testimonio anterior"
+      >
+        <ChevronLeft className="w-6 h-6 text-gray-600" />
+      </button>
 
-    {/* Bloque del testimonio */}
-    <div
-      className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out h-[380px] overflow-y-auto"
-      style={{
-        borderTopLeftRadius: '2rem',
-        borderTopRightRadius: '2rem',
-        borderBottomLeftRadius: '2rem',
-        borderBottomRightRadius: '0',
-      }}
-    >
-      {/* Imagen circular */}
-      <div className="absolute -top-10 left-6 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white overflow-hidden z-10 bg-white">
-        <img
-          src={testimonios[currentTestimonioSlide].imagen || "/placeholder.svg"}
-          alt={testimonios[currentTestimonioSlide].nombre}
-          className="w-full h-full object-cover"
-        />
+      {/* Bloque del testimonio */}
+      <div
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[420px] md:min-h-[380px] h-auto"
+        style={{
+          borderTopLeftRadius: '2rem',
+          borderTopRightRadius: '2rem',
+          borderBottomLeftRadius: '2rem',
+          borderBottomRightRadius: '0'
+        }}
+      >
+        {/* Imagen circular */}
+        <div className="absolute -top-10 left-6 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white overflow-hidden z-10 bg-white">
+          <img
+            src={testimonios[currentTestimonioSlide].imagen || "/placeholder.svg"}
+            alt={testimonios[currentTestimonioSlide].nombre}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Contenido */}
+        <div className="mt-16 md:mt-4">
+          <p className="text-xl font-bold text-[#1e3a5f]">
+            {testimonios[currentTestimonioSlide].nombre}
+          </p>
+          <p className="text-base text-white mt-2 leading-relaxed">
+            {testimonios[currentTestimonioSlide].testimonio}
+          </p>
+        </div>
       </div>
 
-      {/* Contenido */}
-      <div className="mt-12 md:mt-4">
-        <p className="text-xl font-bold text-[#1e3a5f]">
-          {testimonios[currentTestimonioSlide].nombre}
-        </p>
-        <p className="text-base text-white mt-2 leading-relaxed">
-          {testimonios[currentTestimonioSlide].testimonio}
-        </p>
-      </div>
+      {/* Flecha derecha */}
+      <button
+        onClick={nextTestimonioSlide}
+        className="absolute right-2 md:-right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
+        aria-label="Siguiente testimonio"
+      >
+        <ChevronRight className="w-6 h-6 text-gray-600" />
+      </button>
     </div>
-
-    {/* Flecha derecha */}
-    <button
-      onClick={nextTestimonioSlide}
-      className="absolute right-2 md:-right-12 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors"
-      aria-label="Siguiente testimonio"
-    >
-      <ChevronRight className="w-6 h-6 text-gray-600" />
-    </button>
-  </div>
-
 
     {/* Dots de paginación */}
     <div className="flex justify-center mt-6 space-x-2">
