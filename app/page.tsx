@@ -32,7 +32,7 @@ export default function Component() {
   e.preventDefault();
 
   const element = document.getElementById(id);
-  const headerOffset = 80; // Cambia este valor si tu header es más alto o más bajo
+  const headerOffset = 300; // Cambia este valor si tu header es más alto o más bajo
 
   if (element) {
     const elementPosition = element.getBoundingClientRect().top + window.scrollY;
@@ -997,7 +997,6 @@ export default function Component() {
         <section id="vive-tu-campus" className="py-2 px-2 bg-[#0f172c]">
         {/* Imagen*/}
                <img
-                id="vive-tu-campus"
                 src="images/ViveTuCampus.png"
                 alt="Imagen de vive tu campus"
                 className="w-full h-auto mb-8"
