@@ -686,6 +686,13 @@ export default function Component() {
             Cronograma
           </a>
           <a
+            href="#vive-tu-campus"
+            onClick={(e) => handleNavClick(e, "vive-tu-campus")}
+            className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
+          >
+            Vive tu campus
+          </a>
+          <a
             href="#testimonios"
             onClick={(e) => handleNavClick(e, "testimonios")}
             className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
@@ -709,21 +716,28 @@ export default function Component() {
     <a
       href="#cronograma"
       onClick={(e) => handleNavClick(e, "cronograma")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-45 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Cronograma
     </a>
     <a
+      href="#vive-tu-campus"
+      onClick={(e) => handleNavClick(e, "vive-tu-campus")}
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+    >
+      Vive tu campus
+    </a>
+    <a
       href="#testimonios"
       onClick={(e) => handleNavClick(e, "testimonios")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-45 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Testimonios
     </a>
     <a
       href="#contacto"
       onClick={(e) => handleNavClick(e, "contacto")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-45 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
+      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Contacto
     </a>
@@ -967,8 +981,9 @@ export default function Component() {
           </div>
            {/* Imagen debajo de "Bienvenidos" */}
                <img
-                src="images/Bienvenida.png"
-                alt="Imagen de bienvenida"
+                id="vive-tu-campus"
+                src="images/ViveTuCampus.png"
+                alt="Imagen de vive tu campus"
                 className="w-full h-auto mt-16 mb-8"
               />
         </section>
@@ -976,7 +991,7 @@ export default function Component() {
         
 
  {/* Testimonios Section */}
-<section id="testimonios" className="py-16 px-4 bg-[#1e3a5f]">
+<section id="testimonios" className="py-16 px-4 bg-[#0f172c]">
   <div className="container mx-auto">
     {/* Título */}
     <div className="text-center mb-12">
@@ -984,7 +999,7 @@ export default function Component() {
     </div>
 
     {/* Testimonio con flechas laterales */}
-    <div className="relative max-w-5xl mx-auto flex items-center">
+    <div className="relative max-w-2xl mx-auto flex items-center">
       {/* Flecha izquierda */}
       <button
         onClick={prevTestimonioSlide}
@@ -1002,7 +1017,7 @@ export default function Component() {
           borderTopRightRadius: '2rem',
           borderBottomLeftRadius: '2rem',
           borderBottomRightRadius: '0',
-          minHeight: '280px'
+          minHeight: '380px'
         }}
       >
         {/* Imagen circular (parte superior izquierda) */}
@@ -1125,80 +1140,80 @@ export default function Component() {
       </main>
 
       {/* Footer */}
-      <footer id="contacto" className="bg-[#0f172c] text-white py-12 px-4">
+      <footer id="contacto" className="bg-[#1e3a5f] text-white py-12 px-4">
         <div className="container mx-auto max-w-7xl">
           {/* Nuestras Oficinas */}
           <div className="mb-8">
-            <h2 className="text-2xl font-bold text-center mb-12 bg-[#0f172c]">Nuestras oficinas</h2>
+            <h2 className="text-2xl font-bold text-center mb-12 bg-[#1e3a5f]">Nuestras oficinas</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Columna 1 */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Mail className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">mercadeo@admon.uniajc.edu.co</span>
                   </div>
-                  <div className="bg-[#0f172c] text-sm">PBX: +57 (2) 665 2828 Opc1</div>
-                  <div className="bg-[#0f172c] text-sm">Fax PBX: +57 (2) 688 2828 Ext. 108</div>
+                  <div className="bg-[#1e3a5f] text-sm">PBX: +57 (2) 665 2828 Opc1</div>
+                  <div className="bg-[#1e3a5f] text-sm">Fax PBX: +57 (2) 688 2828 Ext. 108</div>
                 </div>
 
                 <hr className="border-gray-400" />
 
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Norte: Av.6N # 28N – 102</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 9:00 p.m</span>
                   </div>
-                  <div className="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 5:00 p.m</div>
+                  <div className="bg-[#1e3a5f] text-sm">Sábados 8:00 a.m a 5:00 p.m</div>
                 </div>
               </div>
 
               {/* Columna 2 */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Sur: Calle 25 No. 127 – 220</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Phone className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">+57 2 555 4471</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 6:00 p.m</span>
                   </div>
-                  <div className="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 1:00 p.m</div>
+                  <div className="bg-[#1e3a5f] text-sm">Sábados 8:00 a.m a 1:00 p.m</div>
                 </div>
 
                 <hr className="border-gray-400" />
 
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Estación 1: Av.3A # 23CN – 84</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 12:00 m</span>
                   </div>
-                  <div className="bg-[#0f172c] text-sm">2:00 p.m a 6:00 p.m</div>
+                  <div className="bg-[#1e3a5f] text-sm">2:00 p.m a 6:00 p.m</div>
                 </div>
               </div>
 
               {/* Columna 3 */}
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Estación 2: Av.3AN # 23D – 34</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Phone className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">+57 2 667 3571 – 72</span>
                   </div>
@@ -1207,26 +1222,26 @@ export default function Component() {
                 <hr className="border-gray-400" />
 
                 <div className="space-y-3">
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <MapPin className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Ubicación Estación 3: Av.3N # 52N – 102</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Phone className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">+57 2 653 6703</span>
                   </div>
-                  <div className="flex items-center space-x-2 bg-[#0f172c]">
+                  <div className="flex items-center space-x-2 bg-[#1e3a5f]">
                     <Calendar className="h-4 w-4 flex-shrink-0" />
                     <span className="text-sm">Lunes a Viernes 8:00 a.m a 9:30 p.m</span>
                   </div>
-                  <div className="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 12:30 p.m</div>
+                  <div className="bg-[#1e3a5f] text-sm">Sábados 8:00 a.m a 12:30 p.m</div>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Footer Bottom */}
-          <div className="border-t bg-[#0f172c] pt-8">
+          <div className="border-t bg-[#1e3a5f] pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex items-center">
                 <Image
