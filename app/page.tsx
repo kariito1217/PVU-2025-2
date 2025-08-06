@@ -734,7 +734,7 @@ export default function Component() {
 
       <main className="flex-1">
         {/* Hero Section with Banner */}
-        <section className="relative overflow-hidden bg-[#1e3a5f]">
+        <section className="relative overflow-hidden bg-[#0f172c]">
           {/* Animated floating dots */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none z-10">
             <div className="absolute top-20 left-10 w-3 h-3 bg-[#ffd700] rounded-full floating-dot-1"></div>
