@@ -25,17 +25,29 @@ export default function Component() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   // Función para manejar la navegación suave
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    e.preventDefault()
-    setIsMobileMenuOpen(false) // Cerrar menú móvil
-    const targetElement = document.getElementById(targetId)
-    if (targetElement) {
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
-    }
+  const handleNavClick = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  id: string
+) => {
+  e.preventDefault();
+
+  const element = document.getElementById(id);
+  const headerOffset = 80; // Cambia este valor si tu header es más alto o más bajo
+
+  if (element) {
+    const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+
+    // Cierra el menú móvil después de hacer clic
+    setIsMobileMenuOpen(false);
   }
+};
+
 
   const aliados = [
     [
@@ -1014,7 +1026,7 @@ export default function Component() {
 
       {/* Bloque del testimonio */}
       <div
-        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[680px] md:min-h-[380px]"
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[670px] md:min-h-[380px]"
         style={{
           borderTopLeftRadius: '2rem',
           borderTopRightRadius: '2rem',
