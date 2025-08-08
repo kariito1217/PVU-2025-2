@@ -157,7 +157,7 @@ export default function Component() {
           areaEncargada: "UVI",
           lugar: "",
           tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
+          link: null,
         },
         {
           facultad: "FI - FEDV (385)",
@@ -187,7 +187,7 @@ export default function Component() {
           areaEncargada: "UVI",
           lugar: "",
           tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
+          link: null,
         },
         {
           facultad: "FI - FCE - FEDV (518)",
@@ -401,7 +401,7 @@ export default function Component() {
           areaEncargada: "UVI",
           lugar: "",
           tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
+          link: null,
         },
         {
           facultad: "FI - FCE - FCSH (207)",
@@ -421,7 +421,7 @@ export default function Component() {
           areaEncargada: "UVI",
           lugar: "",
           tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
+          link: null,
         },
       ],
       estado: "completado",
@@ -469,7 +469,7 @@ export default function Component() {
 const cronogramaSameco = [
 {
       fecha: "JUEVES 14 DE AGOSTO 2025",
-      titulo: "Sigue soñando, sigue soñando, sigue soñando",
+      titulo: "Canta conmigo aunque sea por hoy",
       actividades: [
           {
           facultad: "FI - FCE (247)",
