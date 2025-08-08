@@ -874,7 +874,7 @@ const cronogramaSameco = [
         </section>
 
         {/* Cronograma Section */}
-        <section id="cronograma" className="py-16 px-4 bg-[#0f172c]">
+        <section className="py-16 px-4 bg-[#0f172c]">
           <div className="container mx-auto">
             <div className="text-center mb-12 relative overflow-hidden">
               {/* Decorative elements */}
