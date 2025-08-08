@@ -239,43 +239,6 @@ export default function Component() {
       ],
       estado: "pendiente",
     },
-    {
-      fecha: "VIERNES 15 DE AGOSTO 2025",
-      titulo: "Sueña hasta que tus sueños se hagan realidad",
-      actividades: [
-        {
-          facultad: "FI - FEDV (385)",
-          horaInicio: "8:00 am",
-          horaFin: "12:00 pm",
-          actividad: "Yincana de Servicios",
-          areaEncargada: "Mercadeo Dependencias Asociadas",
-          lugar: "Sede SMART CAMPUS",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "FCE - FCSH (335)",
-          horaInicio: "2:00 pm",
-          horaFin: "6:00 pm",
-          actividad: "Yincana de Servicios",
-          areaEncargada: "Mercadeo Dependencias Asociadas",
-          lugar: "Sede SMART CAMPUS",
-          tipo: "Presencial",
-          link: null,
-        },
-         {
-          facultad: "FI - FCE - FEDV (518)",
-          horaInicio: "6:30 pm",
-          horaFin: "9:30 pm",
-          actividad: "Yincana de Servicios",
-          areaEncargada: "Mercadeo Dependencias Asociadas",
-          lugar: "Sede SMART CAMPUS",
-          tipo: "Presencial",
-          link: null,
-        },
-      ],
-      estado: "pendiente",
-    },
   ]
 
   const cronogramaSur = [
@@ -533,6 +496,43 @@ const cronogramaSameco = [
           horaInicio: "6:30 pm",
           horaFin: "9:30 pm",
           actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+      ],
+      estado: "pendiente",
+    },
+     {
+      fecha: "VIERNES 15 DE AGOSTO 2025",
+      titulo: "Sueña hasta que tus sueños se hagan realidad",
+      actividades: [
+        {
+          facultad: "FI - FEDV (385)",
+          horaInicio: "8:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FCE - FCSH (335)",
+          horaInicio: "2:00 pm",
+          horaFin: "6:00 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FI - FCE - FEDV (518)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Yincana de Servicios",
           areaEncargada: "Mercadeo Dependencias Asociadas",
           lugar: "Sede SMART CAMPUS",
           tipo: "Presencial",
@@ -1185,12 +1185,12 @@ const cronogramaSameco = [
               />
 
     {/* Genially embed centrado y responsivo */}
-  <div className="max-w-5xl mx-auto">
+  <div className="max-w-6xl mx-auto">
     <div className="relative pb-[56.25%] h-0">
       <iframe
         className="absolute top-0 left-0 w-full h-full rounded-md shadow-lg"
         title="PVU- A la U llego con toda"
-        src="https://view.genially.com/66a90bf82bcaa07950ac4e94"
+        src="https://view.genially.com/688a49a57ff1a3947733db19"
         width="1200"
         height="675"
         frameBorder="0"
