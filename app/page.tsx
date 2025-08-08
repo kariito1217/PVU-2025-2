@@ -105,7 +105,7 @@ export default function Component() {
         "Al principio estaba toda nerviosa por entrar a la U, pero el PVU me bajó la ansiedad full. Me explicaron todo súper claro y me sentí acompañada desde el primer día. Ahora sí voy con toda.",
     },
     {
-      imagen: "/images/Jampy.jpg",
+      imagen: "/images/jampy.jpg",
       nombre: "Juan Pablo Ocoro Torres",
       titulo: "Estudiante de Diseño Visual",
       testimonio:
@@ -145,34 +145,6 @@ export default function Component() {
   }
 
   const cronogramaNorte = [
-    {
-      fecha: "MARTES 12 DE AGOSTO 2025",
-      titulo: "Tienes que perder para aprender a ganar",
-      actividades: [
-      {
-          facultad: "FI - FCE - FEDV - FCSH (720)",
-          horaInicio: "8:00 am",
-          horaFin: "10:00 am",
-          actividad: "Alfabetización",
-          areaEncargada: "UVI",
-          lugar: "",
-          tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
-        },
-        {
-          facultad: "FI - FCE - FEDV (518)",
-          horaInicio: "6:30 pm",
-          horaFin: "8:30 pm",
-          actividad: "Alfabetización",
-          areaEncargada: "UVI",
-          lugar: "",
-          tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
-        },
-        
-      ],
-      estado: "completado",
-    },
     {
       fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
       titulo: "Viví y aprendí de los tontos y los sabios",
@@ -438,7 +410,17 @@ export default function Component() {
           tipo: "Presencial",
           link: null,
         },
-          {
+        {
+          facultad: "FI - FCE - FEDV - FCSH (720)",
+          horaInicio: "8:00 am",
+          horaFin: "10:00 am",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
+        },
+        {
           facultad: "FI - FCE - FCSH (207)",
           horaInicio: "6:30 pm",
           horaFin: "9:30 pm",
@@ -447,6 +429,16 @@ export default function Component() {
           lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
+        },
+        {
+          facultad: "FI - FCE - FEDV (518)",
+          horaInicio: "6:30 pm",
+          horaFin: "8:30 pm",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
         },
       ],
       estado: "completado",
@@ -1238,7 +1230,7 @@ const cronogramaSameco = [
 
       {/* Bloque del testimonio */}
       <div
-        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[350px] md:min-h-[250px]"
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[385px] md:min-h-[250px]"
         style={{
           borderTopLeftRadius: '2rem',
           borderTopRightRadius: '2rem',
