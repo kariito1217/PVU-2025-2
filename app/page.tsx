@@ -149,6 +149,16 @@ export default function Component() {
       fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
       titulo: "Viví y aprendí de los tontos y los sabios",
       actividades: [
+          {
+          facultad: "FI - FCE - FEDV - FCSH (533)",
+          horaInicio: "8:00 am",
+          horaFin: "10:00 am",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
+        },
         {
           facultad: "FI - FEDV (385)",
           horaInicio: "9:00 am",
@@ -168,6 +178,16 @@ export default function Component() {
           lugar: "Lugares Asignados (PMA) En la sede Norte",
           tipo: "Presencial",
           link: null,
+        },
+        {
+          facultad: "FI - FCE - FCSH (207)",
+          horaInicio: "6:30 pm",
+          horaFin: "8:30 pm",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
         },
         {
           facultad: "FI - FCE - FEDV (518)",
@@ -444,70 +464,6 @@ export default function Component() {
       estado: "completado",
     },
     {
-      fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
-      titulo: "Viví y aprendí de los tontos y los sabios",
-      actividades: [
-         {
-          facultad: "FI - FCE - FEDV - FCSH (533)",
-          horaInicio: "8:00 am",
-          horaFin: "10:00 am",
-          actividad: "Alfabetización",
-          areaEncargada: "UVI",
-          lugar: "",
-          tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
-        },
-        {
-          facultad: "FI - FCE - FCSH (207)",
-          horaInicio: "6:30 pm",
-          horaFin: "8:30 pm",
-          actividad: "Alfabetización",
-          areaEncargada: "UVI",
-          lugar: "",
-          tipo: "Virtual",
-          link: "https://zoom.us/j/123456789#success",
-        },
-      ],
-      estado: "en-progreso",
-    },
-    {
-      fecha: "JUEVES 14 DE AGOSTO 2025",
-      titulo: "Canta conmigo aunque sea por hoy",
-      actividades: [
-        {
-          facultad: "FI - FCE (247)",
-          horaInicio: "8:00 am",
-          horaFin: "12:00 pm",
-          actividad: "Yincana de servicios",
-          areaEncargada: "Mercadeo Dependencias Asociadas",
-          lugar: "Sede SMART CAMPUS",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "FEDV - FCSH (286)",
-          horaInicio: "2:00 pm",
-          horaFin: "6:00 pm",
-          actividad: "Yincana de servicios",
-          areaEncargada: "Mercadeo Dependencias Asociadas",
-          lugar: "Sede SMART CAMPUS",
-          tipo: "Presencial",
-          link: null,
-        },
-         {
-          facultad: "FI - FCE - FCSH (207)",
-          horaInicio: "6:30 pm",
-          horaFin: "9:30 pm",
-          actividad: "Yincana de servicios",
-          areaEncargada: "Mercadeo Dependencias Asociadas",
-          lugar: "Sede SMART CAMPUS",
-          tipo: "Presencial",
-          link: null,
-        },
-      ],
-      estado: "pendiente",
-    },
-    {
       fecha: "VIERNES 15 DE AGOSTO 2025",
       titulo: "Sueña hasta que tus sueños se hagan realidad",
       actividades: [
@@ -548,6 +504,43 @@ export default function Component() {
 
 
 const cronogramaSameco = [
+{
+      fecha: "JUEVES 14 DE AGOSTO 2025",
+      titulo: "Sigue soñando, sigue soñando, sigue soñando",
+      actividades: [
+          {
+          facultad: "FI - FCE (247)",
+          horaInicio: "8:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV - FCSH (286)",
+          horaInicio: "2:00 pm",
+          horaFin: "6:00 pm",
+          actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FI - FCE - FCSH (207)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+      ],
+      estado: "pendiente",
+    },
     {
       fecha: "SÁBADO 16 DE AGOSTO 2025 - GRUPO A",
       titulo: "Sigue soñando, sigue soñando, sigue soñando",
