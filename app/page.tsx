@@ -98,32 +98,25 @@ export default function Component() {
 
   const testimonios = [
     {
-      imagen: "https://www.uniajc.edu.co/wp-content/uploads/2017/03/Yulieth-FCE.jpg",
-      nombre: "Julieth Vanessa Ortiz",
-      titulo: "Egresada de Contaduría Pública",
+      imagen: "/images/girl.jpg",
+      nombre: "Brenda Valencia Monroy",
+      titulo: "Estudiante de Administración en Salud y Seguridad en el Trabajo",
       testimonio:
-        "Mi carrera me enseño mucho ya que actualmente lo aplico constantemente en el ámbito personal y laboral. Gracias a la educación de la Institución Universitaria Antonio José Camacho he podido resolver muchos problemas y viviré muy agradecida con ella y los profesores porque gracias a ellos soy quien soy ahora.",
+        "Al principio estaba toda nerviosa por entrar a la U, pero el PVU me bajó la ansiedad full. Me explicaron todo súper claro y me sentí acompañada desde el primer día. Ahora sí voy con toda.",
     },
     {
-      imagen: "https://www.uniajc.edu.co/wp-content/uploads/2018/07/Dayana-Vanessa-FCE.jpg",
-      nombre: "Dayana Vanessa López",
-      titulo: "Egresada de Mercadeo y Negocios Internacionales",
+      imagen: "/images/Jampy.jpg",
+      nombre: "Juan Pablo Ocoro Torres",
+      titulo: "Estudiante de Diseño Visual",
       testimonio:
-        "La Institución Universitaria Antonio José Camacho me aporto crecimiento en mi vida personal, familiar, profesional y laboral, esta me dio las bases para crecer a nivel económico y familiar, gracias a la UNIAJC",
+        "Lo mejor del PVU fue que conocí gente de otras carreras, parchamos en los talleres y ahora ya no me siento tan perdido en la U. Hasta armamos combo pa’ los descansos.",
     },
     {
-      imagen: "https://www.uniajc.edu.co/wp-content/uploads/2017/02/Julieth-FEDV.jpg",
-      nombre: "Julieth Carolina Restrepo Bedoya",
-      titulo: "Egresada de la Especialización en Ergonomía",
+      imagen: "/images/Karen.jpg",
+      nombre: "Karen Tatiana Suarez Arroyave",
+      titulo: "Estudiante de Ingeniería de Sistemas",
       testimonio:
-        "La especialización para mí fue una gran oportunidad para enfocarme en un área que es de gran interés y de poco conocimiento al nivel del mercado, es decir, es un plus para mi profesión, que complementa mi maestría como salubrista. Pienso que fue una oportunidad maravillosa de crecer, no tan solo como profesional, sino también como ser humano porque la Institución Universitaria Antonio José Camacho con su modelo humanista que lo permite.",
-    },
-    {
-      imagen: "https://www.uniajc.edu.co/wp-content/uploads/2017/03/WhatsApp-Image-2025-04-29-at-4.02.29-PM.jpeg",
-      nombre: "Silvia Vanessa Muñoz Ruíz",
-      titulo: "Técnico Laboral en Información y Servicio al Cliente",
-      testimonio:
-        'La institución Universitaria Antonio José Camacho me abrió las puertas a la educación de la mano de un equipo profesoral inigualable, se encargaron de forjar conocimientos sólidos, con propuestas y escenarios que contribuyeron a mi formación del ser y el saber hacer. UNIAJC me dejó grandes enseñanzas y lazos inquebrantables, hoy disfruto de mi título como: "Técnico Laboral en Información y Servicio al Cliente" sintiéndome orgullosa de mi paso por la Universidad, lo cual me ha permitido aportar mis conocimientos en el ámbito en el que me desarrollo y deseando continuar con mi formación en la misma.',
+        "Conocí los beneficios que la U puede brindarme. En el PVU me di cuenta de todo lo que tiene la U: apoyo en salud, talleres, cultura, deporte... hasta cosas que ni sabía que existían. Ahora sé a dónde ir si necesito ayuda o quiero hacer algo más que estudiar.",
     },
   ]
 
@@ -824,13 +817,6 @@ const cronogramaSameco = [
             Vive tu campus
           </a>
           <a
-            href="#testimonios"
-            onClick={(e) => handleNavClick(e, "testimonios")}
-            className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
-          >
-            Testimonios
-          </a>
-          <a
             href="#contacto"
             onClick={(e) => handleNavClick(e, "contacto")}
             className="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium cursor-pointer py-2 px-4 rounded-md hover:bg-gray-50"
@@ -857,13 +843,6 @@ const cronogramaSameco = [
       className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
     >
       Vive tu campus
-    </a>
-    <a
-      href="#testimonios"
-      onClick={(e) => handleNavClick(e, "testimonios")}
-      className="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full rounded-tr-none rounded-bl-none rounded-br-none shadow-xl"
-    >
-      Testimonios
     </a>
     <a
       href="#contacto"
@@ -1243,7 +1222,7 @@ const cronogramaSameco = [
   <div className="container mx-auto">
     {/* Título */}
     <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-4xl font-bold text-white">Nuestros egresados dicen</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-white">Experiencia PVU</h2>
     </div>
 
     {/* Testimonio con flechas laterales */}
@@ -1259,7 +1238,7 @@ const cronogramaSameco = [
 
       {/* Bloque del testimonio */}
       <div
-        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[670px] md:min-h-[380px]"
+        className="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[350px] md:min-h-[250px]"
         style={{
           borderTopLeftRadius: '2rem',
           borderTopRightRadius: '2rem',
@@ -1280,6 +1259,9 @@ const cronogramaSameco = [
         <div className="mt-16 md:mt-4">
           <p className="text-xl font-bold text-[#1e3a5f]">
             {testimonios[currentTestimonioSlide].nombre}
+          </p>
+           <p className="text-sm font-bold text-white">
+            {testimonios[currentTestimonioSlide].titulo}
           </p>
           <p className="text-base text-white mt-2 leading-relaxed">
             {testimonios[currentTestimonioSlide].testimonio}
