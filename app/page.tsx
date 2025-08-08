@@ -157,38 +157,82 @@ export default function Component() {
       titulo: "El pasado se ha ido",
       actividades: [
         {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "7:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
+          facultad: "FI - FEDV (385)",
+          horaInicio: "12:00 pm",
+          horaFin: "1:00 pm",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FI - FEDV (385)",
+          horaInicio: "1:00 pm",
+          horaFin: "3:00 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+          {
+          facultad: "FCE - FCSH (335)",
+          horaInicio: "2:30 pm",
+          horaFin: "3:30 pm",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+          {
+          facultad: "FCE - FCSH (335)",
+          horaInicio: "3:30 pm",
+          horaFin: "5:30 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+          {
+          facultad: "FCE - FEDV - FCSH (360)",
+          horaInicio: "5:00 pm",
+          horaFin: "6:00 pm",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+          {
+          facultad: "FCE - FEDV - FCSH (360)",
+          horaInicio: "6:00 pm",
+          horaFin: "7:30 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "9:00 am",
-          actividad: "Osadía",
-          area: "UVI",
-          lugar: "Ágora Norte",
+          facultad: "FI (365)",
+          horaInicio: "7:00 pm",
+          horaFin: "8:00 pm",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "10:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "12:00 pm",
-          actividad: "Osadía",
-          area: "UVI",
-          lugar: "Ágora Norte",
+          facultad: "FI (365)",
+          horaInicio: "8:00 pm",
+          horaFin: "9:30 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
@@ -199,42 +243,27 @@ export default function Component() {
       fecha: "MARTES 12 DE AGOSTO 2025",
       titulo: "Tienes que perder para aprender a ganar",
       actividades: [
-        {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "7:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
-          tipo: "Presencial",
-          link: null,
+      {
+          facultad: "FI - FCE - FEDV - FCSH (720)",
+          horaInicio: "8:00 am",
+          horaFin: "10:00 am",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
         },
         {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "9:00 am",
-          actividad: "Osadía",
-          area: "UVI",
-          lugar: "Ágora Norte",
-          tipo: "Presencial",
-          link: null,
+          facultad: "FI - FCE - FEDV (518)",
+          horaInicio: "6:30 pm",
+          horaFin: "8:30 pm",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
         },
-        {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "10:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "12:00 pm",
-          actividad: "Osadía",
-          area: "UVI",
-          lugar: "Ágora Norte",
-          tipo: "Presencial",
-          link: null,
-        },
+        
       ],
       estado: "completado",
     },
@@ -243,31 +272,34 @@ export default function Component() {
       titulo: "Viví y aprendí de los tontos y los sabios",
       actividades: [
         {
-          facultad: "Todas las Facultades",
-          horario: "8:00 am",
-          actividad: "Taller de Técnicas de Estudio",
-          area: "Académica",
-          lugar: "Aulas Múltiples Norte",
+          facultad: "FI - FEDV (385)",
+          horaInicio: "9:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FI - FEDV",
+          lugar: "Lugares Asignados (PMA) En la sede Norte",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ciencias empresariales",
-          horario: "10:00 am",
-          actividad: "Presentación Plan de Estudios",
-          area: "Decanatura",
-          lugar: "Auditorio Norte",
+          facultad: "FCE - FCSH (335)",
+          horaInicio: "2:00 pm",
+          horaFin: "5:00 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FCE - FCSH",
+          lugar: "Lugares Asignados (PMA) En la sede Norte",
           tipo: "Presencial",
-          link: "https://meet.google.com/abc-defg-hij",
+          link: null,
         },
         {
-          facultad: "Ingenierías",
-          horario: "2:00 pm",
-          actividad: "Laboratorios Virtuales",
-          area: "Tecnología",
-          lugar: "Lab. Sistemas Norte",
-          tipo: "Virtual",
-          link: "https://meet.google.com/abc-defg-hij",
+          facultad: "FI - FCE - FEDV (518)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FI - FCE - FEDV",
+          lugar: "Lugares Asignados (PMA) En la sede Norte",
+          tipo: "Presencial",
+          link: null,
         },
       ],
       estado: "en-progreso",
@@ -277,31 +309,34 @@ export default function Component() {
       titulo: "Canta conmigo aunque sea por hoy",
       actividades: [
         {
-          facultad: "Todas las Facultades",
-          horario: "9:00 am",
-          actividad: "Taller Proyecto de Vida",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
+          facultad: "FI - FEDV (385)",
+          horaInicio: "9:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "FI - FEDV",
+          lugar: "Lugares Asignados (PMA) En la sede Norte",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ciencias sociales y humanas",
-          horario: "11:00 am",
-          actividad: "Dinámicas de Integración",
-          area: "Psicología",
-          lugar: "Espacios Abiertos Norte",
+          facultad: "FCE - FCSH (335)",
+          horaInicio: "2:00 pm",
+          horaFin: "5:00 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "FCE - FCSH",
+          lugar: "Lugares Asignados (PMA) En la sede Norte",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Educación a distancia",
-          horario: "3:00 pm",
-          actividad: "Plataforma Virtual",
-          area: "Tecnología",
-          lugar: "Virtual",
-          tipo: "Virtual",
-          link: "https://zoom.us/j/123456789",
+          facultad: "FI - FCE - FEDV (518)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "FI - FCE - FEDV",
+          lugar: "Lugares Asignados (PMA) En la sede Norte",
+          tipo: "Presencial",
+          link: null,
         },
       ],
       estado: "pendiente",
@@ -311,63 +346,32 @@ export default function Component() {
       titulo: "Sueña hasta que tus sueños se hagan realidad",
       actividades: [
         {
-          facultad: "Todas las Facultades",
-          horario: "8:00 am",
-          actividad: "Conferencia de Liderazgo",
-          area: "Rectoría",
-          lugar: "Auditorio Principal Norte",
+          facultad: "FI - FEDV (385)",
+          horaInicio: "8:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Todas las Facultades",
-          horario: "10:30 am",
-          actividad: "Actividades Culturales",
-          area: "Bienestar",
-          lugar: "Plaza Central Norte",
+          facultad: "FCE - FCSH (335)",
+          horaInicio: "2:00 pm",
+          horaFin: "6:00 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
           tipo: "Presencial",
           link: null,
         },
-        {
-          facultad: "Todas las Facultades",
-          horario: "2:00 pm",
-          actividad: "Deportes y Recreación",
-          area: "Deportes",
-          lugar: "Canchas Norte",
-          tipo: "Presencial",
-          link: null,
-        },
-      ],
-      estado: "pendiente",
-    },
-    {
-      fecha: "SÁBADO 16 DE AGOSTO 2025",
-      titulo: "Sigue soñando, sigue soñando, sigue soñando",
-      actividades: [
-        {
-          facultad: "Todas las Facultades",
-          horario: "9:00 am",
-          actividad: "Feria de Servicios",
-          area: "Administrativa",
-          lugar: "Campus Norte Completo",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Todas las Facultades",
-          horario: "11:00 am",
-          actividad: "Grupos Estudiantiles",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Todas las Facultades",
-          horario: "2:00 pm",
-          actividad: "Evaluación y Cierre",
-          area: "Académica",
-          lugar: "Auditorio Norte",
+         {
+          facultad: "FI - FCE - FEDV (518)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
           tipo: "Presencial",
           link: null,
         },
@@ -382,38 +386,83 @@ export default function Component() {
       titulo: "El pasado se ha ido",
       actividades: [
         {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "7:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
+          facultad: "FI -FCE (247)",
+          horaInicio: "6:00 am",
+          horaFin: "7:00 am",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "9:00 am",
-          actividad: "Osadía",
-          area: "UVI",
-          lugar: "Ágora Norte",
+          facultad: "FI -FCE (247)",
+          horaInicio: "7:00 am",
+          horaFin: "9:00 am",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "10:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Ágora Norte",
+          facultad: "FEDV -FCSH (286)",
+          horaInicio: "9:00 am",
+          horaFin: "10:00 am",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV -FCSH (286)",
+          horaInicio: "10:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+        
+           {
+          facultad: "FCE - FEDV - FCSH (360)",
+          horaInicio: "5:00 pm",
+          horaFin: "6:00 pm",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+          {
+          facultad: "FCE - FEDV - FCSH (360)",
+          horaInicio: "6:00 pm",
+          horaFin: "7:30 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "12:00 pm",
-          actividad: "Osadía",
-          area: "UVI",
-          lugar: "Ágora Norte",
+          facultad: "FI (365)",
+          horaInicio: "7:00 pm",
+          horaFin: "8:00 pm",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada Aula Máxima",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FI (365)",
+          horaInicio: "8:00 pm",
+          horaFin: "9:30 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Aula Máxima",
           tipo: "Presencial",
           link: null,
         },
@@ -424,39 +473,33 @@ export default function Component() {
       fecha: "MARTES 12 DE AGOSTO 2025",
       titulo: "Tienes que perder para aprender a ganar",
       actividades: [
-        {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "8:00 am",
-          actividad: "Bienvenida Institucional",
-          area: "Rectoría",
-          lugar: "Auditorio Sur",
+         {
+          facultad: "FI - FCE (247)",
+          horaInicio: "9:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FI - FCE",
+          lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ciencias empresariales - Ciencias sociales y humanas",
-          horario: "10:00 am",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Sala Múltiple Sur",
+          facultad: "FCSH - FEDV (286)",
+          horaInicio: "2:00 pm",
+          horaFin: "5:00 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FCSH - FEDV ",
+          lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
         },
-        {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "11:00 am",
-          actividad: "Bienvenida Institucional",
-          area: "Rectoría",
-          lugar: "Auditorio Sur",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Ingenierías - Educación a distancia y virtual",
-          horario: "1:00 pm",
-          actividad: "El Viaje",
-          area: "Bienestar",
-          lugar: "Sala Múltiple Sur",
+          {
+          facultad: "FI - FCE - FCSH (207)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FI - FCE - FCSH",
+          lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
         },
@@ -467,32 +510,25 @@ export default function Component() {
       fecha: "MIÉRCOLES 13 DE AGOSTO 2025",
       titulo: "Viví y aprendí de los tontos y los sabios",
       actividades: [
-        {
-          facultad: "Todas las Facultades",
-          horario: "9:00 am",
-          actividad: "Orientación Académica",
-          area: "Académica",
-          lugar: "Aulas Sur",
-          tipo: "Presencial",
-          link: null,
+         {
+          facultad: "FI - FCE - FEDV - FCSH (533)",
+          horaInicio: "8:00 am",
+          horaFin: "10:00 am",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
         },
         {
-          facultad: "Ciencias empresariales",
-          horario: "11:00 am",
-          actividad: "Inducción Facultad",
-          area: "Decanatura",
-          lugar: "Sala de Juntas Sur",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Ingenierías",
-          horario: "3:00 pm",
-          actividad: "Recorrido Laboratorios",
-          area: "Tecnología",
-          lugar: "Laboratorios Sur",
-          tipo: "Presencial",
-          link: null,
+          facultad: "FI - FCE - FCSH (207)",
+          horaInicio: "6:30 pm",
+          horaFin: "8:30 pm",
+          actividad: "Alfabetización",
+          areaEncargada: "UVI",
+          lugar: "",
+          tipo: "Virtual",
+          link: "https://zoom.us/j/123456789#success",
         },
       ],
       estado: "en-progreso",
@@ -502,31 +538,34 @@ export default function Component() {
       titulo: "Canta conmigo aunque sea por hoy",
       actividades: [
         {
-          facultad: "Todas las Facultades",
-          horario: "8:30 am",
-          actividad: "Taller de Adaptación",
-          area: "Bienestar",
-          lugar: "Sala Múltiple Sur",
+          facultad: "FI - FCE (247)",
+          horaInicio: "8:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Ciencias sociales y humanas",
-          horario: "10:30 am",
-          actividad: "Actividades de Integración",
-          area: "Psicología",
-          lugar: "Patio Sur",
+          facultad: "FEDV - FCSH (286)",
+          horaInicio: "2:00 pm",
+          horaFin: "6:00 pm",
+          actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
           tipo: "Presencial",
           link: null,
         },
-        {
-          facultad: "Educación a distancia",
-          horario: "2:30 pm",
-          actividad: "Capacitación Virtual",
-          area: "Tecnología",
-          lugar: "Sala de Sistemas Sur",
-          tipo: "Híbrido",
-          link: "https://teams.microsoft.com/l/meetup-join/19%3ameeting",
+         {
+          facultad: "FI - FCE - FCSH (207)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Yincana de servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Sede SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
         },
       ],
       estado: "pendiente",
@@ -535,64 +574,33 @@ export default function Component() {
       fecha: "VIERNES 15 DE AGOSTO 2025",
       titulo: "Sueña hasta que tus sueños se hagan realidad",
       actividades: [
-        {
-          facultad: "Todas las Facultades",
-          horario: "9:00 am",
-          actividad: "Charla Motivacional",
-          area: "Bienestar",
-          lugar: "Auditorio Sur",
+         {
+          facultad: "FI - FCE (247)",
+          horaInicio: "9:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "FI - FCE",
+          lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
         },
         {
-          facultad: "Todas las Facultades",
-          horario: "11:00 am",
-          actividad: "Festival Cultural",
-          area: "Cultura",
-          lugar: "Patio Central Sur",
+          facultad: "FEDV - FCSH (286)",
+          horaInicio: "2:00 pm",
+          horaFin: "5:00 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "FI - FCE",
+          lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
         },
-        {
-          facultad: "Todas las Facultades",
-          horario: "2:30 pm",
-          actividad: "Actividades Deportivas",
-          area: "Deportes",
-          lugar: "Zona Deportiva Sur",
-          tipo: "Presencial",
-          link: null,
-        },
-      ],
-      estado: "pendiente",
-    },
-    {
-      fecha: "SÁBADO 16 DE AGOSTO 2025",
-      titulo: "Sigue soñando, sigue soñando, sigue soñando",
-      actividades: [
-        {
-          facultad: "Todas las Facultades",
-          horario: "10:00 am",
-          actividad: "Expo Servicios",
-          area: "Administrativa",
-          lugar: "Instalaciones Sur",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Todas las Facultades",
-          horario: "12:00 pm",
-          actividad: "Presentación Grupos",
-          area: "Bienestar",
-          lugar: "Auditorio Sur",
-          tipo: "Presencial",
-          link: null,
-        },
-        {
-          facultad: "Todas las Facultades",
-          horario: "3:00 pm",
-          actividad: "Ceremonia de Cierre",
-          area: "Rectoría",
-          lugar: "Auditorio Sur",
+         {
+          facultad: "FI - FCE - FCSH (207)",
+          horaInicio: "6:30 pm",
+          horaFin: "9:30 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "FI - FCE - FCSH",
+          lugar: "Lugares Asignados (PMA) En la sede Sur",
           tipo: "Presencial",
           link: null,
         },
@@ -600,6 +608,165 @@ export default function Component() {
       estado: "pendiente",
     },
   ]
+
+
+const cronogramaSameco = [
+    {
+      fecha: "SÁBADO 16 DE AGOSTO 2025 - GRUPO A",
+      titulo: "Sigue soñando, sigue soñando, sigue soñando",
+      actividades: [
+        {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "7:00 am",
+          horaFin: "8:00 am",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "8:00 am",
+          horaFin: "8:40 am",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Auditorio F.Tenorio",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "8:40 am",
+          horaFin: "10:05 am",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FEDV",
+          lugar: "Auditorio F.Tenorio",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "10:05 am",
+          horaFin: "10:35 am",
+          actividad: "BREAK",
+          areaEncargada: "Bienestar Universitario",
+          lugar: "Terraza 2do Piso",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "10:35 am",
+          horaFin: "12:00 pm",
+          actividad: "Matemáticas, Comunicación, Lenguaje",
+          areaEncargada: "PMA",
+          lugar: "Auditorio F.Tenorio",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "12:00 pm",
+          horaFin: "1:00 pm",
+          actividad: "Almuerzo",
+          areaEncargada: "Bienestar Universitario",
+          lugar: "Terraza 2do Piso",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV (115) ADM.SALUD VIRTUAL (120)  ",
+          horaInicio: "1:00 pm",
+          horaFin: "5:00 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Lugares Asignados (SMART CAMPUS)",
+          tipo: "Presencial",
+          link: null,
+        },
+      ],
+      estado: "pendiente",
+    },
+    {
+      fecha: "SÁBADO 16 DE AGOSTO 2025 - GRUPO B",
+      titulo: "Sigue soñando, sigue soñando, sigue soñando",
+      actividades: [
+        {
+          facultad: "FEDV (115) ",
+          horaInicio: "7:00 am",
+          horaFin: "8:00 am",
+          actividad: "Registro de Asistentes",
+          areaEncargada: "Mercadeo",
+          lugar: "Entrada SMART CAMPUS",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV (115) ",
+          horaInicio: "8:00 am",
+          horaFin: "12:00 pm",
+          actividad: "Yincana de Servicios",
+          areaEncargada: "Mercadeo Dependencias Asociadas",
+          lugar: "Lugares Asignados (SMART CAMPUS)",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV (115) ",
+          horaInicio: "12:00 pm",
+          horaFin: "1:00 pm",
+          actividad: "Almuerzo",
+          areaEncargada: "Bienestar Universitario",
+          lugar: "Terraza 2do Piso",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV (115) ",
+          horaInicio: "1:00 pm",
+          horaFin: "1:40 pm",
+          actividad: "Dream On",
+          areaEncargada: "Rector",
+          lugar: "Auditorio F.Tenorio",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV (115) ",
+          horaInicio: "1:40 pm",
+          horaFin: "3:05 pm",
+          actividad: "Encuentro con Facultades",
+          areaEncargada: "FEDV",
+          lugar: "Auditorio F.Tenorio",
+          tipo: "Presencial",
+          link: null,
+        },
+        {
+          facultad: "FEDV (115) ",
+          horaInicio: "3:05 pm",
+          horaFin: "3:35 pm",
+          actividad: "Break",
+          areaEncargada: "Bienestar Universitario",
+          lugar: "Terraza 2do Piso",
+          tipo: "Presencial",
+          link: null,
+        },
+         {
+          facultad: "FEDV (115) ",
+          horaInicio: "3:35 pm",
+          horaFin: "5:00 pm",
+          actividad: "Matemáticas, Comunicación y Lenguaje",
+          areaEncargada: "PMA",
+          lugar: "Auditorio F.Tenorio",
+          tipo: "Presencial",
+          link: null,
+        },
+      ],
+      estado: "pendiente",
+    },
+  ]
+
 
   return (
     <div className="flex flex-col min-h-screen scroll-smooth">
@@ -849,9 +1016,10 @@ export default function Component() {
                             <thead>
                               <tr className="bg-[#1e3a5f] text-white">
                                 <th className="px-3 py-2 text-left font-medium">Facultades</th>
-                                <th className="px-3 py-2 text-left font-medium">Hora</th>
+                                <th className="px-3 py-2 text-left font-medium">Hora Inicio</th>
+                                <th className="px-3 py-2 text-left font-medium">Hora Fin</th>
                                 <th className="px-3 py-2 text-left font-medium">Actividad</th>
-                                <th className="px-3 py-2 text-left font-medium">Área</th>
+                                <th className="px-3 py-2 text-left font-medium">Área Encargada</th>
                                 <th className="px-3 py-2 text-left font-medium">Lugar</th>
                                 <th className="px-3 py-2 text-left font-medium">Modalidad</th>
                               </tr>
@@ -860,10 +1028,12 @@ export default function Component() {
                               {dia.actividades.map((actividad, actIndex) => (
                                 <tr key={actIndex} className={actIndex % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                                   <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.facultad}</td>
-                                  <td className="px-3 py-2 text-gray-700">{actividad.horario}</td>
-                                  <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.actividad}</td>
-                                  <td className="px-3 py-2 text-gray-700">{actividad.area}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.horaInicio}</td>
+                                  <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.horaFin}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.actividad}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.areaEncargada}</td>
                                   <td className="px-3 py-2 text-gray-700">{actividad.lugar}</td>
+                  
                                   <td className="px-3 py-2">
                                     <div className="flex items-center gap-2">
                                       <Badge
@@ -937,9 +1107,10 @@ export default function Component() {
                             <thead>
                               <tr className="bg-[#1e3a5f] text-white">
                                 <th className="px-3 py-2 text-left font-medium">Facultades</th>
-                                <th className="px-3 py-2 text-left font-medium">Hora</th>
+                                <th className="px-3 py-2 text-left font-medium">Hora Inicio</th>
+                                <th className="px-3 py-2 text-left font-medium">Hora Fin</th>
                                 <th className="px-3 py-2 text-left font-medium">Actividad</th>
-                                <th className="px-3 py-2 text-left font-medium">Área</th>
+                                <th className="px-3 py-2 text-left font-medium">Área Encargada</th>
                                 <th className="px-3 py-2 text-left font-medium">Lugar</th>
                                 <th className="px-3 py-2 text-left font-medium">Modalidad</th>
                               </tr>
@@ -948,9 +1119,10 @@ export default function Component() {
                               {dia.actividades.map((actividad, actIndex) => (
                                 <tr key={actIndex} className={actIndex % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                                   <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.facultad}</td>
-                                  <td className="px-3 py-2 text-gray-700">{actividad.horario}</td>
-                                  <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.actividad}</td>
-                                  <td className="px-3 py-2 text-gray-700">{actividad.area}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.horaInicio}</td>
+                                  <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.horaFin}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.actividad}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.areaEncargada}</td>
                                   <td className="px-3 py-2 text-gray-700">{actividad.lugar}</td>
                                   <td className="px-3 py-2">
                                     <div className="flex items-center gap-2">
@@ -990,10 +1162,104 @@ export default function Component() {
                 ))}
               </Accordion>
             </div>
+
+
+          {/* Sede Sameco */}
+            <div className="max-w-6xl mx-auto">
+              <h3 className="text-3xl font-bold text-white mb-4 text-left mt-12">Sede Sameco</h3>
+              <Accordion type="single" collapsible className="space-y-4">
+                {cronogramaSameco.map((dia, index) => (
+                  <AccordionItem
+                    key={index}
+                    value={`item-${index}`}
+                    className="bg-white rounded-lg border border-[#1e3a5f]/20 overflow-hidden shadow-sm"
+                  >
+                    <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-[#1e3a5f]/5 transition-colors">
+                      <div className="flex items-center justify-between w-full">
+                        <div className="flex items-center space-x-4">
+                          <div className="flex items-center space-x-3">
+                            <Clock className="h-6 w-6 text-[#ffd700]" />
+                            <div className="text-left">
+                              <h3 className="text-lg font-bold text-[#1e3a5f]">{dia.fecha}</h3>
+                              <p className="text-sm text-[#1e3a5f]/70 font-medium">{dia.titulo}</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-6 pt-2">
+                      <div className="bg-[#1e3a5f]/5 rounded-lg p-4 mt-2">
+                        <h4 className="font-semibold text-[#1e3a5f] mb-4 flex items-center">
+                          <Calendar className="h-4 w-4 mr-2" />
+                          Programación del día
+                        </h4>
+                        <div className="overflow-x-auto">
+                          <table className="w-full text-sm">
+                            <thead>
+                              <tr className="bg-[#1e3a5f] text-white">
+                                <th className="px-3 py-2 text-left font-medium">Facultades</th>
+                                <th className="px-3 py-2 text-left font-medium">Hora Inicio</th>
+                                <th className="px-3 py-2 text-left font-medium">Hora Fin</th>
+                                <th className="px-3 py-2 text-left font-medium">Actividad</th>
+                                <th className="px-3 py-2 text-left font-medium">Área Encargada</th>
+                                <th className="px-3 py-2 text-left font-medium">Lugar</th>
+                                <th className="px-3 py-2 text-left font-medium">Modalidad</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {dia.actividades.map((actividad, actIndex) => (
+                                <tr key={actIndex} className={actIndex % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                                  <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.facultad}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.horaInicio}</td>
+                                  <td className="px-3 py-2 text-[#1e3a5f] font-medium">{actividad.horaFin}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.actividad}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.areaEncargada}</td>
+                                  <td className="px-3 py-2 text-gray-700">{actividad.lugar}</td>
+                                  <td className="px-3 py-2">
+                                    <div className="flex items-center gap-2">
+                                      <Badge
+                                        className={
+                                          actividad.tipo === "Presencial"
+                                            ? "bg-[#1e3a5f] text-white"
+                                            : actividad.tipo === "Virtual"
+                                              ? "bg-[#ffd700] text-[#1e3a5f]"
+                                              : "bg-green-500 text-white"
+                                        }
+                                      >
+                                        {actividad.tipo}
+                                      </Badge>
+                                      {(actividad.tipo === "Virtual" || actividad.tipo === "Híbrido") &&
+                                        actividad.link && (
+                                          <a
+                                            href={actividad.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center justify-center w-6 h-6 bg-[#1e3a5f] hover:bg-[#1e3a5f]/80 text-white rounded-full transition-colors duration-200"
+                                            title="Unirse a la sesión virtual"
+                                          >
+                                            <ExternalLink className="w-3 h-3" />
+                                          </a>
+                                        )}
+                                    </div>
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+
+
+
           </div>
         </section>
 
-  {/* PRESENTACION */}
+  {/* PRESENTACION GENIALLY*/}
         <section id="vive-tu-campus" className="py-2 px-2 bg-[#0f172c]">
         {/* Imagen*/}
                <img
@@ -1001,6 +1267,22 @@ export default function Component() {
                 alt="Imagen de vive tu campus"
                 className="w-full h-auto mb-8"
               />
+
+    {/* Genially embed centrado y responsivo */}
+  <div className="max-w-5xl mx-auto">
+    <div className="relative pb-[56.25%] h-0">
+      <iframe
+        className="absolute top-0 left-0 w-full h-full rounded-md shadow-lg"
+        title="PVU- A la U llego con toda"
+        src="https://view.genially.com/66a90bf82bcaa07950ac4e94"
+        width="1200"
+        height="675"
+        frameBorder="0"
+        scrolling="yes"
+        allowFullScreen
+      ></iframe>
+    </div>
+  </div>
         </section>
 
 
