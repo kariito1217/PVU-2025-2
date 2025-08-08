@@ -882,9 +882,12 @@ const cronogramaSameco = [
                 <Star className="h-6 w-6 sm:h-8 sm:w-8 text-[#ffd700] floating-dot-1" />
               </div>
               <div className="relative z-10">
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                  Bienvenidos
-                </h2>
+               <img
+                src="images/BIENVENIDOS.png"
+                alt="Bienvenidos"
+                className="w-180 h-auto mb-8 mx-auto"
+              />
+
                 <p className="text-lg text-white mb-2">Sigue soñando con nosotros. Este viaje apenas comienza.</p>
                 <div className="w-16 h-1 bg-[#1e3a5f] mx-auto mb-8"></div>
                 <div className="max-w-4xl mx-auto text-center mb-12">
@@ -899,6 +902,12 @@ const cronogramaSameco = [
             </div>
 
             {/* Sede Norte */}
+             <img
+              id="cronograma"
+              src="images/CRONOGRAMA.png"
+              alt="Imagen de vive tu campus"
+              className="w-280 h-auto mb-8 mx-auto"
+            />
             <div className="max-w-6xl mx-auto mb-12">
               <h3 className="text-3xl font-bold text-white mb-3 text-left">Sede Norte</h3>
               <Accordion type="single" collapsible className="space-y-4">
