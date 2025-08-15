@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PVU - Snippet WordPress</title>
+  <script>tailwind.config = { corePlugins: { preflight: false } }</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes float1 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.7; } 25% { transform: translate(10px,-15px) scale(1.1); opacity: 1; } 50% { transform: translate(-5px,-25px) scale(0.9); opacity: 0.8; } 75% { transform: translate(15px,-10px) scale(1.05); opacity: 0.9; } }
+    @keyframes float2 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.8; } 33% { transform: translate(-12px,20px) scale(1.2); opacity: 1; } 66% { transform: translate(8px,-15px) scale(0.8); opacity: 0.7; } }
+    @keyframes float3 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.6; } 20% { transform: translate(20px,10px) scale(1.15); opacity: 0.9; } 40% { transform: translate(-10px,-20px) scale(0.85); opacity: 1; } 60% { transform: translate(15px,-5px) scale(1.1); opacity: 0.8; } 80% { transform: translate(-5px,15px) scale(0.95); opacity: 0.7; } }
+    @keyframes float4 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.9; } 50% { transform: translate(-20px,-30px) scale(1.3); opacity: 0.6; } }
+    @keyframes float5 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.5; } 25% { transform: translate(25px,-10px) scale(0.7); opacity: 1; } 75% { transform: translate(-15px,25px) scale(1.4); opacity: 0.8; } }
+    @keyframes float6 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.7; } 25% { transform: translate(10px,-15px) scale(1.1); opacity: 1; } 50% { transform: translate(-5px,-25px) scale(0.9); opacity: 0.8; } 75% { transform: translate(15px,-10px) scale(1.05); opacity: 0.9; } }
+    @keyframes float7 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.8; } 33% { transform: translate(-12px,20px) scale(1.2); opacity: 1; } 66% { transform: translate(8px,-15px) scale(0.8); opacity: 0.7; } }
+    @keyframes float8 { 0%, 100% { transform: translate(0,0) scale(1); opacity: 0.6; } 20% { transform: translate(20px,10px) scale(1.15); opacity: 0.9; } 40% { transform: translate(-10px,-20px) scale(0.85); opacity: 1; } 60% { transform: translate(15px,-5px) scale(1.1); opacity: 0.8; } 80% { transform: translate(-5px,15px) scale(0.95); opacity: 0.7; } }
+
+    .floating-dot-1 { animation: float1 8s ease-in-out infinite; }
+    .floating-dot-2 { animation: float2 6s ease-in-out infinite 1s; }
+    .floating-dot-3 { animation: float3 10s ease-in-out infinite 2s; }
+    .floating-dot-4 { animation: float4 7s ease-in-out infinite 0.5s; }
+    .floating-dot-5 { animation: float5 9s ease-in-out infinite 1.5s; }
+    .floating-dot-6 { animation: float6 11s ease-in-out infinite 3s; }
+    .floating-dot-7 { animation: float7 5s ease-in-out infinite 2.5s; }
+    .floating-dot-8 { animation: float8 8s ease-in-out infinite 4s; }
+
+  </style>
+</head>
+<body>
+  <div id="pvu-root" class="flex flex-col min-h-screen">
+
+    <header class="fixed top-0 w-full bg-white shadow-sm border-b border-gray-200 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <img src="REEMPLAZAR_URL_LOGO_HEADER" alt="UNIAJC" class="h-10 w-auto object-contain" />
+        </div>
+        <button id="btn-mobile-menu" class="md:hidden p-2 rounded-md text-[#1e3a5f] hover:bg-gray-100 transition-colors" aria-label="Abrir menú">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="#vive-tu-campus" class="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium" data-scrollto="vive-tu-campus">Vive tu campus</a>
+          <a href="#contacto" class="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium" data-scrollto="contacto">Contacto</a>
+        </nav>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200">
+        <nav class="flex flex-col space-y-2 p-4">
+          <a href="#vive-tu-campus" class="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium py-2 px-4 rounded-md hover:bg-gray-50" data-scrollto="vive-tu-campus">Vive tu campus</a>
+          <a href="#contacto" class="text-[#1e3a5f] hover:text-[#ffd700] transition-colors font-medium py-2 px-4 rounded-md hover:bg-gray-50" data-scrollto="contacto">Contacto</a>
+        </nav>
+      </div>
+
+      <div class="hidden md:flex fixed top-1/3 right-0 flex-col items-end space-y-4 z-40">
+        <a href="#vive-tu-campus" class="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full shadow-xl" data-scrollto="vive-tu-campus">Vive tu campus</a>
+        <a href="#contacto" class="bg-[#298ed6] text-white text-lg font-semibold px-6 py-3 w-50 text-right hover:bg-[#163254] transition-all duration-200 rounded-tl-full shadow-xl" data-scrollto="contacto">Contacto</a>
+      </div>
+    </header>
+
+    <main class="flex-1 mt-[64px]">
+      <section class="relative overflow-hidden bg-[#0f172c]">
+        <div class="absolute inset-0 overflow-hidden pointer-events-none z-10">
+          <div class="absolute top-20 left-10 w-3 h-3 bg-[#ffd700] rounded-full floating-dot-1"></div>
+          <div class="absolute top-40 right-20 w-2 h-2 bg-[#ffd700] rounded-full floating-dot-2"></div>
+          <div class="absolute top-60 left-1/4 w-4 h-4 bg-[#ffd700] rounded-full floating-dot-3"></div>
+          <div class="absolute bottom-40 right-10 w-3 h-3 bg-[#ffd700] rounded-full floating-dot-4"></div>
+          <div class="absolute bottom-20 left-1/3 w-2 h-2 bg-[#ffd700] rounded-full floating-dot-5"></div>
+          <div class="absolute top-32 right-1/3 w-3 h-3 bg-[#ffd700] rounded-full floating-dot-6"></div>
+          <div class="absolute bottom-60 right-1/4 w-2 h-2 bg-[#ffd700] rounded-full floating-dot-7"></div>
+          <div class="absolute top-1/2 left-20 w-5 h-5 bg-[#ffd700] rounded-full floating-dot-8"></div>
+          <div class="absolute top-80 right-40 w-2 h-2 bg-[#ffd700] rounded-full floating-dot-1"></div>
+          <div class="absolute bottom-80 left-40 w-3 h-3 bg-[#ffd700] rounded-full floating-dot-2"></div>
+          <div class="absolute top-1/3 right-1/5 w-4 h-4 bg-[#ffd700] rounded-full floating-dot-3"></div>
+          <div class="absolute bottom-1/3 left-1/5 w-2 h-2 bg-[#ffd700] rounded-full floating-dot-4"></div>
+        </div>
+        <div class="relative w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px]">
+          <img src="REEMPLAZAR_URL_BANNER" alt="Preparación para la vida Universitaria - Bienvenido estudiante nuevo" class="object-cover object-center w-full h-full" />
+        </div>
+      </section>
+
+      <section id="vive-tu-campus" class="py-2 px-2 bg-[#0f172c]">
+        <img src="REEMPLAZAR_URL_VIVE_TU_CAMPUS" alt="Imagen de vive tu campus" class="w-full h-auto mb-8" />
+        <div class="max-w-6xl mx-auto">
+          <div class="relative pb-[56.25%] h-0">
+            <iframe class="absolute top-0 left-0 w-full h-full rounded-md shadow-lg" title="PVU- A la U llego con toda" src="https://view.genially.com/688a49a57ff1a3947733db19" width="1200" height="675" frameborder="0" scrolling="yes" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonios" class="py-16 px-4 bg-[#0f172c]">
+        <div class="container mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">Experiencia PVU</h2>
+          </div>
+          <div class="relative max-w-2xl mx-auto flex items-stretch">
+            <button id="btn-prev-testimonio" class="absolute left-4 md:-left-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors" aria-label="Testimonio anterior">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 text-gray-600"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <div id="testimonio-card" class="relative w-full bg-[#4b9ddf] text-white pt-8 pb-8 pr-6 pl-6 md:pl-40 transition-all duration-300 ease-in-out min-h-[385px] md:min-h-[250px] rounded-tl-[2rem] rounded-tr-[2rem] rounded-bl-[2rem] rounded-br-[0]">
+              <div class="absolute -top-10 left-6 w-24 h-24 md:w-32 md:h-32 rounded-full border-4 border-white overflow-hidden z-10 bg-white">
+                <img id="testimonio-img" src="" alt="Foto" class="w-full h-full object-cover" />
+              </div>
+              <div class="mt-16 md:mt-4">
+                <p id="testimonio-nombre" class="text-xl font-bold text-[#1e3a5f]"></p>
+                <p id="testimonio-titulo" class="text-sm font-bold text-white"></p>
+                <p id="testimonio-texto" class="text-base text-white mt-2 leading-relaxed"></p>
+              </div>
+            </div>
+            <button id="btn-next-testimonio" class="absolute right-4 md:-right-12 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors" aria-label="Siguiente testimonio">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 text-gray-600"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div id="testimonios-dots" class="flex justify-center mt-6 space-x-2"></div>
+        </div>
+      </section>
+
+      <section id="aliados" class="py-12 px-4 bg-gray-100">
+        <div class="container mx-auto">
+          <div class="text-center mb-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1e3a5f] mb-8">Nuestros Organizadores</h2>
+          </div>
+          <div class="relative max-w-6xl mx-auto">
+            <button id="btn-prev-aliados" class="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors" aria-label="Anterior">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 text-gray-600"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button id="btn-next-aliados" class="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors" aria-label="Siguiente">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-6 h-6 text-gray-600"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+            <div class="overflow-hidden rounded-lg bg-white shadow-sm">
+              <div id="aliados-track" class="flex transition-transform duration-300 ease-in-out" style="transform: translateX(0%)"></div>
+            </div>
+            <div id="aliados-dots" class="flex justify-center mt-6 space-x-2"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contacto" class="bg-[#0f172c] text-white py-12 px-4">
+      <div class="container mx-auto max-w-7xl">
+        <div class="mb-8">
+          <h2 class="text-2xl font-bold text-center mb-12 bg-[#0f172c]">Nuestras oficinas</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+                  <span class="text-sm">mercadeo@admon.uniajc.edu.co</span>
+                </div>
+                <div class="bg-[#0f172c] text-sm">PBX: +57 (2) 665 2828 Opc1</div>
+                <div class="bg-[#0f172c] text-sm">Fax PBX: +57 (2) 688 2828 Ext. 108</div>
+              </div>
+              <hr class="border-gray-400" />
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  <span class="text-sm">Ubicación Norte: Av.6N # 28N – 102</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span class="text-sm">Lunes a Viernes 8:00 a.m a 9:00 p.m</span>
+                </div>
+                <div class="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 5:00 p.m</div>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  <span class="text-sm">Ubicación Sur: Calle 25 No. 127 – 220</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.3 1.76.54 2.6a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.48-1.11a2 2 0 0 1 2.11-.45c.84.24 1.71.42 2.6.54A2 2 0 0 1 22 16.92z"/></svg>
+                  <span class="text-sm">+57 2 555 4471</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span class="text-sm">Lunes a Viernes 8:00 a.m a 6:00 p.m</span>
+                </div>
+                <div class="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 1:00 p.m</div>
+              </div>
+              <hr class="border-gray-400" />
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  <span class="text-sm">Ubicación Estación 1: Av.3A # 23CN – 84</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span class="text-sm">Lunes a Viernes 8:00 a.m a 12:00 m</span>
+                </div>
+                <div class="bg-[#0f172c] text-sm">2:00 p.m a 6:00 p.m</div>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  <span class="text-sm">Ubicación Estación 2: Av.3AN # 23D – 34</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.3 1.76.54 2.6a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.48-1.11a2 2 0 0 1 2.11-.45c.84.24 1.71.42 2.6.54A2 2 0 0 1 22 16.92z"/></svg>
+                  <span class="text-sm">+57 2 667 3571 – 72</span>
+                </div>
+              </div>
+              <hr class="border-gray-400" />
+              <div class="space-y-3">
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.5 7 13 7 13s7-7.5 7-13c0-3.9-3.1-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                  <span class="text-sm">Ubicación Estación 3: Av.3N # 52N – 102</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.86 19.86 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.89.3 1.76.54 2.6a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.48-1.11a2 2 0 0 1 2.11-.45c.84.24 1.71.42 2.6.54A2 2 0 0 1 22 16.92z"/></svg>
+                  <span class="text-sm">+57 2 653 6703</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-[#0f172c]">
+                  <svg class="h-4 w-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  <span class="text-sm">Lunes a Viernes 8:00 a.m a 9:30 p.m</span>
+                </div>
+                <div class="bg-[#0f172c] text-sm">Sábados 8:00 a.m a 12:30 p.m</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border-t bg-[#0f172c] pt-8">
+          <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div class="flex items-center">
+              <img src="REEMPLAZAR_URL_LOGO_FOOTER" alt="UNIAJC Logo" class="w-[120px] h-[60px] object-contain" />
+            </div>
+            <div class="text-center text-sm text-white">
+              <p>Institución de Educación Superior sujeta a inspección y vigilancia por el MEN</p>
+              <p>Santiago de Cali, Colombia | Todos los derechos reservados © 2019</p>
+            </div>
+            <div class="flex space-x-3">
+              <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer"><span class="text-[#0f172c] font-bold text-sm">f</span></div>
+              <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer"><span class="text-[#0f172c] font-bold text-sm">t</span></div>
+              <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer"><span class="text-[#0f172c] font-bold text-sm">y</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const aliados = [
+        [
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2023/08/Pma.png', alt: 'PMA - Programa de Mejoramiento Académico', title: 'PMA' },
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2023/08/radio.png', alt: 'Radio UNIAJC', title: 'Radio UNIAJC' },
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2016/12/Vicerrectoria-.png', alt: 'Vicerrectoría Académica', title: 'Vicerrectoría Académica' },
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2016/12/bienestar.png', alt: 'Bienestar Universitario', title: 'Bienestar Universitario' }
+        ],
+        [
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2023/08/Biblioteca.png', alt: 'Biblioteca', title: 'Biblioteca' },
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2023/08/centro_idiomas.png', alt: 'Centro de Idiomas', title: 'Centro de Idiomas' },
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2016/12/ID-UVI-Unicamacho-Azul.png', alt: 'UNIAJC Virtual', title: 'UNIAJC Virtual' },
+          { src: 'https://www.uniajc.edu.co/wp-content/uploads/2016/12/Ple.png', alt: 'PLE', title: 'PLE' }
+        ]
+      ];
+
+      const testimonios = [
+        { imagen: 'REEMPLAZAR_URL_GIRL', nombre: 'Brenda Yolime Valencia Perea', titulo: 'Estudiante de Administración en Seguridad y Salud en el Trabajo', testimonio: 'Al principio estaba toda nerviosa por entrar a la U, pero el PVU me bajó la ansiedad full. Me explicaron todo súper claro y me sentí acompañada desde el primer día. Ahora sí voy con toda.' },
+        { imagen: 'REEMPLAZAR_URL_JAMPY', nombre: 'Juan Pablo Ocoró Torres', titulo: 'Estudiante de Diseño Visual', testimonio: 'Lo mejor del PVU fue que conocí gente de otras carreras, parchamos en los talleres y ahora ya no me siento tan perdido en la U. Hasta armamos combo pa’ los descansos.' },
+        { imagen: 'REEMPLAZAR_URL_KAREN', nombre: 'Karen Tatiana Suarez Arroyave', titulo: 'Estudiante de Ingeniería de Sistemas', testimonio: 'Conocí los beneficios que la U puede brindarme. En el PVU me di cuenta de todo lo que tiene la U: apoyo en salud, talleres, cultura, deporte... hasta cosas que ni sabía que existían. Ahora sé a dónde ir si necesito ayuda o quiero hacer algo más que estudiar.' }
+      ];
+
+      const headerOffset = 80;
+
+      function smoothScrollToId(id) {
+        const element = document.getElementById(id);
+        if (!element) return;
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerOffset;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }
+
+      function setupAnchors() {
+        document.querySelectorAll('[data-scrollto]').forEach(function(link) {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const id = link.getAttribute('data-scrollto');
+            if (id) smoothScrollToId(id);
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+              mobileMenu.classList.add('hidden');
+            }
+          });
+        });
+      }
+
+      function setupMobileMenu() {
+        const btn = document.getElementById('btn-mobile-menu');
+        const menu = document.getElementById('mobile-menu');
+        if (!btn || !menu) return;
+        btn.addEventListener('click', function() {
+          menu.classList.toggle('hidden');
+        });
+      }
+
+      function setupTestimonios() {
+        let current = 0;
+        const img = document.getElementById('testimonio-img');
+        const nombre = document.getElementById('testimonio-nombre');
+        const titulo = document.getElementById('testimonio-titulo');
+        const texto = document.getElementById('testimonio-texto');
+        const dotsContainer = document.getElementById('testimonios-dots');
+
+        function render() {
+          const t = testimonios[current];
+          if (img) img.src = t.imagen || '';
+          if (img) img.alt = t.nombre || 'Foto';
+          if (nombre) nombre.textContent = t.nombre || '';
+          if (titulo) titulo.textContent = t.titulo || '';
+          if (texto) texto.textContent = t.testimonio || '';
+          Array.from(dotsContainer.children).forEach(function(btn, idx) {
+            btn.className = 'w-3 h-3 rounded-full transition-colors duration-200 ' + (idx === current ? 'bg-white' : 'bg-white/50 hover:bg-white/70');
+          });
+        }
+
+        function buildDots() {
+          dotsContainer.innerHTML = '';
+          testimonios.forEach(function(_, idx) {
+            const b = document.createElement('button');
+            b.setAttribute('aria-label', 'Ir al testimonio ' + (idx + 1));
+            b.className = 'w-3 h-3 rounded-full transition-colors duration-200 bg-white/50 hover:bg-white/70';
+            b.addEventListener('click', function() { current = idx; render(); });
+            dotsContainer.appendChild(b);
+          });
+        }
+
+        const prevBtn = document.getElementById('btn-prev-testimonio');
+        const nextBtn = document.getElementById('btn-next-testimonio');
+        if (prevBtn) prevBtn.addEventListener('click', function() { current = (current - 1 + testimonios.length) % testimonios.length; render(); });
+        if (nextBtn) nextBtn.addEventListener('click', function() { current = (current + 1) % testimonios.length; render(); });
+
+        buildDots();
+        render();
+      }
+
+      function setupAliados() {
+        let current = 0;
+        const track = document.getElementById('aliados-track');
+        const dotsContainer = document.getElementById('aliados-dots');
+        if (!track || !dotsContainer) return;
+
+        aliados.forEach(function(slide) {
+          const slideEl = document.createElement('div');
+          slideEl.className = 'w-full flex-shrink-0';
+          const grid = document.createElement('div');
+          grid.className = 'grid grid-cols-2 md:grid-cols-4 gap-8 p-12';
+          slide.forEach(function(ali) {
+            const cell = document.createElement('div');
+            cell.className = 'flex items-center justify-center';
+            const img = document.createElement('img');
+            img.src = ali.src;
+            img.alt = ali.alt;
+            img.title = ali.title;
+            img.className = 'h-16 w-auto object-contain max-w-full hover:scale-105 transition-transform duration-200';
+            cell.appendChild(img);
+            grid.appendChild(cell);
+          });
+          slideEl.appendChild(grid);
+          track.appendChild(slideEl);
+        });
+
+        function render() {
+          track.style.transform = 'translateX(-' + (current * 100) + '%)';
+          Array.from(dotsContainer.children).forEach(function(btn, idx) {
+            btn.className = 'w-3 h-3 rounded-full transition-colors duration-200 ' + (idx === current ? 'bg-[#1e3a5f]' : 'bg-gray-300 hover:bg-gray-400');
+          });
+        }
+
+        function buildDots() {
+          dotsContainer.innerHTML = '';
+          aliados.forEach(function(_, idx) {
+            const b = document.createElement('button');
+            b.setAttribute('aria-label', 'Ir a la diapositiva ' + (idx + 1));
+            b.className = 'w-3 h-3 rounded-full transition-colors duration-200 bg-gray-300 hover:bg-gray-400';
+            b.addEventListener('click', function() { current = idx; render(); });
+            dotsContainer.appendChild(b);
+          });
+        }
+
+        const prevBtn = document.getElementById('btn-prev-aliados');
+        const nextBtn = document.getElementById('btn-next-aliados');
+        if (prevBtn) prevBtn.addEventListener('click', function() { current = (current - 1 + aliados.length) % aliados.length; render(); });
+        if (nextBtn) nextBtn.addEventListener('click', function() { current = (current + 1) % aliados.length; render(); });
+
+        buildDots();
+        render();
+      }
+
+      setupAnchors();
+      setupMobileMenu();
+      setupTestimonios();
+      setupAliados();
+    })();
+  </script>
+</body>
+</html>
